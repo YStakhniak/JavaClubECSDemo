@@ -6,10 +6,10 @@ phases:
       - wget -O- https://apt.corretto.aws/corretto.key  | apt-key add -
       - add-apt-repository 'deb https://apt.corretto.aws  stable main'
       - apt-get update
-      - apt-get install -y java-17-amazon-corretto-jdk
-      - export JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
-      - export JDK_HOME=/usr/lib/jvm/java-17-amazon-corretto
-      - export JRE_HOME=/usr/lib/jvm/java-17-amazon-corretto
+      - apt-get install -y java-18-amazon-corretto-jdk
+      - export JAVA_HOME=/usr/lib/jvm/java-18-amazon-corretto
+      - export JDK_HOME=/usr/lib/jvm/java-18-amazon-corretto
+      - export JRE_HOME=/usr/lib/jvm/java-18-amazon-corretto
       - |-
         for tool_path in "$JAVA_HOME"/bin/* "$JRE_HOME"/bin/*;
             do tool=`basename "$tool_path"`;
